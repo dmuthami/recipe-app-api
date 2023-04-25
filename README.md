@@ -13,6 +13,10 @@ docker-compose run --rm app sh -c "python manage.py wait_for_db"
 
 docker-compose run --rm app sh -c "python manage.py startapp core"
 
+# Create user app
+
+docker-compose run --rm app sh -c "python manage.py startapp user"
+
 # Migrations
 
 docker-compose run --rm app sh -c "python manage.py makemigrations"
