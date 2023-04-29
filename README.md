@@ -17,6 +17,10 @@ docker-compose run --rm app sh -c "python manage.py startapp core"
 
 docker-compose run --rm app sh -c "python manage.py startapp user"
 
+# Create recipe app
+
+docker-compose run --rm app sh -c "python manage.py startapp recipe"
+
 # Migrations
 
 docker-compose run --rm app sh -c "python manage.py makemigrations"
