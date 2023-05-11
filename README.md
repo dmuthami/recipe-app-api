@@ -44,3 +44,11 @@ docker volume rm recipe-app-api_dev-db-data
 # Run server
 
 docker-compose up
+
+# Connect to EC2 instance
+
+ssh ec2-user@13.49.125.89
+
+# Setup docker-compose
+
+https://stackoverflow.com/questions/63708035/installing-docker-compose-on-amazon-ec2-linux-2-9kb-docker-compose-file
